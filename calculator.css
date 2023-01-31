@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background : url(finance-elements-arrangement-with-empty-notepad-and-calculator.png) no-repeat scroll 10px 20px;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+ background-blend-mode: multiply,multiply;
+}
+.calculatrice{
+    background-color: black;
+    display: flex;
+    flex-direction:column ;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px black;
+}
+.ecran{
+    width: 220px;
+    height: 150px;
+    background-color: rgb(75, 201, 255);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    font-size: 25px;
+}
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+    grid-template-rows: repeat(5,50px);
+    grid-gap: 7px;
+}
+.button{
+    border: none;
+    outline: none;
+    border-radius: 5px ;
+    background-color: #f7f7f7;
+    box-shadow: 0 3px #a8a8a8 ;
+    font-size: 18px;
+
+}
+button:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+button[data-key="8"]{
+    background-color: #ff9900;
+    font-weight: bold;
+    color: white;
+}
+button[data-key="13"]{
+    grid-column: span 2;
+    background-color: #36e700;
+    font-weight: bold;
+    color: white;
+    font-size: 35px ;
+}
